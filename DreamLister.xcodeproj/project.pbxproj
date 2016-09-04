@@ -23,6 +23,7 @@
 		060C772C1D7C8BA100B85950 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C77241D7C8BA100B85950 /* Store+CoreDataProperties.swift */; };
 		060C77301D7CA07200B85950 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 060C772F1D7CA07200B85950 /* tesla.jpg */; };
 		060C77331D7CA12800B85950 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C77321D7CA12800B85950 /* MaterialView.swift */; };
+		060C77351D7CA6C900B85950 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C77341D7CA6C900B85950 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		060C77241D7C8BA100B85950 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		060C772F1D7CA07200B85950 /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 		060C77321D7CA12800B85950 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		060C77341D7CA6C900B85950 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				060C77321D7CA12800B85950 /* MaterialView.swift */,
+				060C77341D7CA6C900B85950 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				060C77351D7CA6C900B85950 /* ItemCell.swift in Sources */,
 				060C770B1D7C851A00B85950 /* MainVC.swift in Sources */,
 				060C77091D7C851A00B85950 /* AppDelegate.swift in Sources */,
 				060C772A1D7C8BA100B85950 /* ItemType+CoreDataProperties.swift in Sources */,
