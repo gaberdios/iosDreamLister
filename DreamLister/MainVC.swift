@@ -38,6 +38,5 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return 0
     }
 
-
 }
 
