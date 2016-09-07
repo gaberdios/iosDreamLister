@@ -144,7 +144,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="d2f-Hv-kEA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="d2f-Hv-kEA">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="JKh-Qb-CaH"/>
                                     <constraint firstAttribute="width" constant="100" id="QEZ-xA-eUX"/>
@@ -155,6 +155,9 @@
                                     <constraint firstAttribute="height" constant="100" id="APr-6I-h8V"/>
                                     <constraint firstAttribute="width" constant="100" id="Fg9-Q4-CPR"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="mNl-qe-FZ5" eventType="touchUpInside" id="ZMm-pp-pP8"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aFZ-qe-R9a" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -239,12 +242,16 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="zzT-FP-Plt">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="vkZ-Pb-qzG">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="mNl-qe-FZ5" id="kU8-BW-XFe"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="Nei-2w-WRB" id="DdE-Tt-Dht"/>
                         <outlet property="priceField" destination="buu-ja-M87" id="co4-DF-Jex"/>
                         <outlet property="storePicker" destination="KAu-Nq-vVi" id="3La-Iq-ngu"/>
+                        <outlet property="thumgImage" destination="d2f-Hv-kEA" id="meg-ww-T4i"/>
                         <outlet property="titleField" destination="aFZ-qe-R9a" id="hyH-RR-QwF"/>
                     </connections>
                 </viewController>
@@ -257,7 +264,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QLS-ER-8At" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bb2-N0-7Oy">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bb2-N0-7Oy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
